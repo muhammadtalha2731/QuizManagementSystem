@@ -28,7 +28,7 @@ QuizManagementSystem/
 ### Step 1 — Create the Database
 
 1. Open **SQL Server Management Studio (SSMS 22)**
-2. Connect to `localhost`
+2. Connect to `localhost\SQLEXPRESS`
 3. Open `QuizManagementDB.sql` (located in the root folder)
 4. Press **F5** to execute → database and seed data will be created
 
@@ -81,7 +81,7 @@ The demo accounts are created by `QuizManagementDB.sql`. Their passwords are in 
 
 ### Connection String
 ```
-Data Source=localhost;Initial Catalog=QuizManagementDB;Integrated Security=True
+Data Source=localhost\SQLEXPRESS;Initial Catalog=QuizManagementDB;Integrated Security=True
 ```
 Modify in `Database/DatabaseConnection.cs` if your SQL Server instance name differs.
 
